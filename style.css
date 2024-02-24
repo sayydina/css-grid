@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+}
+
+main {
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "side content"
+    "footer footer";
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-rows: 1.5fr auto auto;
+}
+
+header {
+  padding: 50px;
+  background-color: #40a2e3;
+  grid-area: header;
+  text-align: center;
+  font-size: 35px;
+}
+
+aside {
+  padding: 80px;
+  background-color: #bbe2ec;
+  grid-area: side;
+}
+
+section {
+  padding: 80px;
+  background-color: #bbe2ec;
+  grid-area: content;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1.5fr;
+  grid-template-rows: 1.5fr 1.5fr;
+  gap: 10px;
+  padding: 10px;
+}
+
+.grid-container div {
+  background-color: rgba(255, 255, 255, 255);
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+}
+
+footer {
+  padding: 50px;
+  background-color: #40a2e3;
+  grid-area: footer;
+  text-align: center;
+  font-size: 18px;
+}
